@@ -1,0 +1,9 @@
+<div class="border rounded border-warning w-25 p-2">
+  <%= form_with model: @task do |f| %>
+    <div class="mb-2"><%= f.label :title %></div>
+    <div class="mb-3"><%= f.text_field :title %></div>
+    <div class="mb-2"><%= f.label :details %></div>
+    <div class="mb-5"><%= f.text_field :details %></div>
+    <div class="mb-3"><%= f.submit %></div>
+  <% end %>
+</div>
